@@ -1,0 +1,47 @@
+IntellijIDEA
+
+1) fILE--> new Project--> maven--Next--MyProjectName--> Localtion --- Finish
+2) .idea - служебный фалы IDEA
+3) src - папка, где находится исходный код (человеческий)
+4) target - папка, где находится машинный код
+5) pom.xml - файлик с настроками проекта
+
+
+6) src-->main - папка для исходных файлов
+   src-->test - папка для тестов
+
+7) src--main--java - тут находятся файлы .java
+   src-main-resources - тут могут находится звук, каритники и тд
+
+8) src--main--java - правой мишкой new -- Java Class-- даем имя и ентер
+9) psvm - создаем шаблон main метода
+10) sout - шаблон для System.out.println
+11) String a = "QQQ";
+создаем тип данных String 
+название переменной a
+значение переменной а - это QQQ
+те
+если написать
+System.out.println(a)---- QQQ
+
+12) Конкотенайия строк (сложение)
+String a = "Hello";
+String b = " World";
+String c = a+b;
+c--> "Hello World"
+
+13) public static void main(String[] args)
+String[] args - параметры которые моно менять\задавать при запуске программы
+Например запускаем с консолькт
+java MyApp Denis 34
+Здесь Denis - это args[0]
+34 - это args[1]
+MyApp - название класса
+
+14) В IdEA можно создать несколько конфигураций
+В правом углу нужно выбрать edit configuration
+и в строке Program Arguments указать параметры
+Denis 34
+
+
+

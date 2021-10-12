@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<school>
+    <classes>
+        <class name="11-Б" count="34">
+            <student>
+                <id>1</id>
+                <name>Denys</name>
+                <surname>Prokopiuk</surname>
+            </student>
+            <student>
+                <id>2</id>
+                <name>Serhii</name>
+                <surname>Kantor</surname>
+            </student>
+        </class>
+
+        <class name="11-A" count="5">
+            <student>
+                <id>1</id>
+                <name>Nik</name>
+                <surname>Birtcev</surname>
+            </student>
+        </class>
+
+    </classes>
+
+</school>

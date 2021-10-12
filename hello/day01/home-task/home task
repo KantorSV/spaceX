@@ -1,0 +1,25 @@
+1) Создать папку sergey
+2) Зайти в эту папку и создать файлик
+Hello.java
+
+3) Открыть Hello.java
+и написать
+
+public class Hello {
+
+	public static void main(String[] args){
+System.out.println("Hello World!!!");
+}
+
+
+}
+
+
+4) Запустить cmd
+5) Зайти в дирректорию где находится Hello.java
+D:
+cd D:\Denis\hello\day01\home-task\denis
+
+6) запустить javac Hello.java
+7) запустить java Hello
+ 

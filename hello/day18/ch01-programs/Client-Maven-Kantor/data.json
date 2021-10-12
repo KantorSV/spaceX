@@ -1,0 +1,25 @@
+{
+  "school": {
+    "classes": [
+      {
+        "class": {
+          "name": "11-Б",
+          "count": 34,
+          "students": [
+            {
+              "id": 1,
+              "name": "Denys",
+              "surname": "Prokopiuk"
+            },
+            {
+              "id": 2,
+              "name": "Serhii",
+              "surname": "Kantor"
+            }
+          ]
+        }
+      },
+      {}
+    ]
+  }
+}

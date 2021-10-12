@@ -1,0 +1,6 @@
+1) private - внутри класса
+2) default (ничего не пишешь) - это private + в рамках пакета
+3) protected - default + наследники
+4) public - везде
+
+private-->default-->protected-->public

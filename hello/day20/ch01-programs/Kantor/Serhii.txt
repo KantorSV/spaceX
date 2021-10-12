@@ -1,0 +1,1 @@
+Person{name='Kantor S.V.', age=34}
