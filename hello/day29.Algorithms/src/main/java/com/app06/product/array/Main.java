@@ -1,0 +1,12 @@
+package com.app06.product.array;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int[] data = {1,2,3,4,5,6,7,8,9,10};
+        FindProduct findProduct = new FindProduct();
+        int res = findProduct.product(data);
+        System.out.println(res);
+    }
+}
