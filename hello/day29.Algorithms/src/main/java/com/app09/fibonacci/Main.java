@@ -1,4 +1,4 @@
-package com.app01.fibonacci;
+package com.app09.fibonacci;
 
 import java.util.Arrays;
 
@@ -9,4 +9,6 @@ public class Main {
         int[] res = fibonacci.createNumbers(10);
         System.out.println(Arrays.toString(res));
     }
+
+
 }
