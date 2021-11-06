@@ -37,7 +37,7 @@ public class MainApp extends Application {
         final TextField usernameField = new TextField();
 
         Label hostLabel = new Label("Host");
-        final TextField hostField = new TextField("127.0.0.1");
+        final TextField hostField = new TextField("138.68.149.71");
 
         Label portLabel = new Label("Port");
         final TextField portField = new TextField("8081");
