@@ -19,15 +19,25 @@ public class DataModule {
         clients.add(socket);
     }
 
+    public void removeClient(Socket socket){
+        clients.remove(socket);
+    }
+
     public void sendToAll(ChatMessage chatMessage) {
         try {
 
-
             for (int i = 0; i < clients.size(); i++) {
                 Socket socket = clients.get(i);
-                OutputStream out = socket.getOutputStream();
-                ObjectOutputStream objectOutputStream = new ObjectOutputStream(out);
-                objectOutputStream.writeObject(chatMessage);
+                /*if(socket.isClosed()==false) {
+                    OutputStream out = socket.getOutputStream();
+                    ObjectOutputStream objectOutputStream = new ObjectOutputStream(out);
+                    objectOutputStream.writeObject(chatMessage);
+                }*/
+                if(!socket.isClosed()) {
+                    OutputStream out = socket.getOutputStream();
+                    ObjectOutputStream objectOutputStream = new ObjectOutputStream(out);
+                    objectOutputStream.writeObject(chatMessage);
+                }
             }
         } catch (Exception ex) {
             ex.printStackTrace();

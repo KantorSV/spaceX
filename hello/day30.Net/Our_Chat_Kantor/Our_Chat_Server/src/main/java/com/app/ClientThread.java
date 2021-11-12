@@ -16,12 +16,17 @@ public class ClientThread extends Thread {
 
         try {
             while (true) {
+                if(socket.isClosed()){
+                    break;
+                }
                 InputStream in = socket.getInputStream();
                 ObjectInputStream objectInputStream = new ObjectInputStream(in);
                 ChatMessage chatMessage = (ChatMessage) objectInputStream.readObject();
                 System.out.println(chatMessage);
                 DataModule.getInstance().sendToAll(chatMessage);
             }
+            DataModule.getInstance().removeClient(socket);
+
         } catch (Exception ex) {
             ex.printStackTrace();
         }

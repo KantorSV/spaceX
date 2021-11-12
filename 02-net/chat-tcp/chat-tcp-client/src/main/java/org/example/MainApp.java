@@ -51,10 +51,6 @@ public class MainApp extends Application {
         final TextField userMessageField = new TextField();
         final Button sendButton = new Button("SEND");
 
-
-
-
-
         connectButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

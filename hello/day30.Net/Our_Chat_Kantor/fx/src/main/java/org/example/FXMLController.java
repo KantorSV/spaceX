@@ -1,6 +1,6 @@
 package org.example;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.URL;
@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -37,22 +38,27 @@ public class FXMLController implements Initializable {
 
 
     @FXML
-    private void handleButtonAction(ActionEvent event) throws IOException {
-        String userName = nameField.getText();
-        Utils.userName=userName;
-        String host = hostField.getText();
-        int port = Integer.parseInt(portField.getText());
-        Socket socket = new Socket(InetAddress.getByName(host), port);
-        Utils.socket = socket;
-        ServerThread serverThread = new ServerThread(socket);
-        serverThread.start();
+    private void handleButtonAction(ActionEvent event) {
+        try {
+            String userName = nameField.getText();
+            Utils.userName = userName;
+            String host = hostField.getText();
+            int port = Integer.parseInt(portField.getText());
+            Socket socket = new Socket(InetAddress.getByName(host), port);
+            Utils.socket = socket;
+            ServerThread serverThread = new ServerThread(socket);
+            serverThread.start();
 
 
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Scene2.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+            Parent root = FXMLLoader.load(getClass().getResource("/fxml/Scene2.fxml"));
+
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }catch(Exception ex){
+            Utils.showError(ex);
+        }
     }
 
     @Override
