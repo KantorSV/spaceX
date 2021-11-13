@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="676.0" prefWidth="966.0" style="-fx-background-color: #3E4044; -fx-border-color: #7E848B; -fx-border-radius: 6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.FXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="8.0" layoutY="8.0" prefHeight="146.0" prefWidth="950.0" style="-fx-background-color: #7E848B; -fx-background-radius: 5;" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0" />
+      <AnchorPane id="AnchorPane" layoutX="8.0" layoutY="187.0" prefHeight="480.0" prefWidth="950.0" style="-fx-background-color: #7E848B; -fx-background-radius: 5;" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="187.0" />
+   </children>
+</AnchorPane>

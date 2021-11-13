@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="833.0" prefWidth="600.0" style="-fx-background-color: #494949; -fx-background-radius: 20; -fx-border-color: blue; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="68.0" layoutY="199.0" text="Port :" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField layoutX="193.0" layoutY="194.0" prefHeight="42.0" prefWidth="382.0" promptText="enter your port" style="-fx-background-radius: 10; -fx-border-color: blue; -fx-border-radius: 10;" />
+      <TextField layoutX="193.0" layoutY="293.0" prefHeight="42.0" prefWidth="382.0" promptText="enter your host" style="-fx-background-radius: 10; -fx-border-color: blue; -fx-border-radius: 10;" AnchorPane.bottomAnchor="498.0" />
+      <Label layoutX="66.0" layoutY="299.0" text="Host :" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField layoutX="193.0" layoutY="393.0" prefHeight="42.0" prefWidth="382.0" promptText="enter your name" style="-fx-background-radius: 10; -fx-border-color: blue; -fx-border-radius: 10;" AnchorPane.bottomAnchor="398.0" />
+      <Label layoutX="66.0" layoutY="399.0" text="Name :" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="193.0" layoutY="571.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="382.0" style="-fx-background-radius: 10; -fx-border-color: blue; -fx-border-radius: 10;" text="CONNECT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="542.0" layoutY="24.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="33.0" style="-fx-background-color: #dd5b5b; -fx-background-radius: 7;" />
+   </children>
+</AnchorPane>
